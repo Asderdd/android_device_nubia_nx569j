@@ -16,11 +16,8 @@
 
 $(call inherit-product, device/nubia/nx569j/full_nx569j.mk)
 
-# Inherit some common Mk stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mk.maintainer=chenzc
+# Inherit some common CM stuff.
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 BOARD_VENDOR := nubia
 
